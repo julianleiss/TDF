@@ -66,18 +66,6 @@ function setup() {
   strokeWeight(1);
   colorMode(HSB, 360, 100, 100, 1);
 
-  // Placeholder for forms (can be expanded later)
-  let formsContainer = createDiv('');
-  formsContainer.parent('centralContent');
-  formsContainer.style('position', 'absolute');
-  formsContainer.style('top', '10px'); // Adjust as needed
-  formsContainer.style('left', '10px'); // Adjust as needed
-  formsContainer.style('color', 'white'); // For visibility if background is dark
-  formsContainer.style('z-index', '10'); // Ensure it's above canvas
-  formsContainer.style('background-color', 'rgba(0,0,0,0.5)');
-  formsContainer.style('padding', '10px');
-  formsContainer.style('border-radius', '5px');
-
   // Eje 1: opacidad progresiva de kaleidoscopios (8 en total)
   sliderBehavior = createSlider(0, 1, 0, 0.01);
   sliderBehavior.style('width', `${SLIDER_LEN}px`);
